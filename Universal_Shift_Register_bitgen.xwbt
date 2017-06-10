@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Universal_Shift_Register.ncd
+OUTFILE=C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Universal_Shift_Register.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301
+LICENSE=WebPack
+USER_INFO=211085786_0_0_935
