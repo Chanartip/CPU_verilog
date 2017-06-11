@@ -18,18 +18,19 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Sequence_detector_top(clk, reset, step, X, M, Q, Z);
+module Sequence_detector_top(clk, reset, step, X, M, Z, Q);
    
    input clk,reset;
-   input X;
-   input M;
-   output Z;
-   output [2:0] Q;
+   input      step;
+   input         X;
+   input         M;
+   output        Z;
+   output [2:0]  Q;
    
    wire step_out;
    
-   //                           (     clk, reset, x, state, z)
-   Sequence_010110_detector sd0 (step_out, reset, X,     Q, z);
+   //                           (     clk, reset, x, m, z, state)
+   Sequence_010110_detector sd0 (step_out, reset, X, M, Z, Q);
    
    //               (clk, reset, Step_in, Step_out);
    switch_filter sd1(clk, reset,    step, step_out);

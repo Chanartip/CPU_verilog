@@ -28,6 +28,16 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sequence_010110_detector.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Sequence_010110_detector.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Sequence_010110_detector.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Sequence_010110_detector_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sequence_010110_detector_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sequence_detector_top.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Sequence_detector_top.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Sequence_detector_top.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sequence_detector_top_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Squence_010110_detector_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Squence_010110_detector_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Squence_010110_detector_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Squence_010110_detector_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="USR_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="USR_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="USR_tb_isim_beh.wdb"/>
@@ -112,13 +122,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1496988459" xil_pn:in_ck="-3146870060321750424" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1496988459">
+    <transform xil_pn:end_ts="1497174184" xil_pn:in_ck="-64283921433370032" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1497174184">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Mux4to1.v"/>
+      <outfile xil_pn:name="Sequence_010110_detector.v"/>
+      <outfile xil_pn:name="Sequence_detector_top.v"/>
+      <outfile xil_pn:name="Squence_010110_detector_tb.v"/>
       <outfile xil_pn:name="Universal_Shift_Register.v"/>
       <outfile xil_pn:name="clock_divider.v"/>
       <outfile xil_pn:name="d_ff.v"/>
@@ -127,11 +137,11 @@
       <outfile xil_pn:name="shift_reg_4bit_tb.v"/>
       <outfile xil_pn:name="switch_filter.v"/>
     </transform>
-    <transform xil_pn:end_ts="1496988221" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3668466156837538503" xil_pn:start_ts="1496988221">
+    <transform xil_pn:end_ts="1497174262" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8325302336289115205" xil_pn:start_ts="1497174262">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1496988221" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-926665255374856457" xil_pn:start_ts="1496988221">
+    <transform xil_pn:end_ts="1497174262" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7253897989568733561" xil_pn:start_ts="1497174262">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -139,11 +149,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1496988470" xil_pn:in_ck="-3146870060321750424" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1496988470">
+    <transform xil_pn:end_ts="1497174187" xil_pn:in_ck="-64283921433370032" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1497174187">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Mux4to1.v"/>
+      <outfile xil_pn:name="Sequence_010110_detector.v"/>
+      <outfile xil_pn:name="Sequence_detector_top.v"/>
+      <outfile xil_pn:name="Squence_010110_detector_tb.v"/>
       <outfile xil_pn:name="Universal_Shift_Register.v"/>
       <outfile xil_pn:name="clock_divider.v"/>
       <outfile xil_pn:name="d_ff.v"/>
@@ -152,30 +164,22 @@
       <outfile xil_pn:name="shift_reg_4bit_tb.v"/>
       <outfile xil_pn:name="switch_filter.v"/>
     </transform>
-    <transform xil_pn:end_ts="1496988472" xil_pn:in_ck="-3146870060321750424" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7216575784767603087" xil_pn:start_ts="1496988470">
+    <transform xil_pn:end_ts="1497174264" xil_pn:in_ck="-64283921433370032" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7007838449598884235" xil_pn:start_ts="1497174262">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Squence_010110_detector_tb_beh.prj"/>
+      <outfile xil_pn:name="Squence_010110_detector_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="shift_reg_4bit_tb_beh.prj"/>
-      <outfile xil_pn:name="shift_reg_4bit_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1496988472" xil_pn:in_ck="-5753568876118398357" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8657052398370431636" xil_pn:start_ts="1496988472">
+    <transform xil_pn:end_ts="1497174264" xil_pn:in_ck="8807882721006411705" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2945818208008922952" xil_pn:start_ts="1497174264">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Squence_010110_detector_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="shift_reg_4bit_tb_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1496915351" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1496915351">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -212,20 +216,9 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Universal_Shift_Register.lso"/>
-      <outfile xil_pn:name="Universal_Shift_Register.ngc"/>
-      <outfile xil_pn:name="Universal_Shift_Register.ngr"/>
-      <outfile xil_pn:name="Universal_Shift_Register.prj"/>
-      <outfile xil_pn:name="Universal_Shift_Register.stx"/>
-      <outfile xil_pn:name="Universal_Shift_Register.syr"/>
-      <outfile xil_pn:name="Universal_Shift_Register.xst"/>
-      <outfile xil_pn:name="Universal_Shift_Register_beh.prj"/>
-      <outfile xil_pn:name="Universal_Shift_Register_stx_beh.prj"/>
-      <outfile xil_pn:name="Universal_Shift_Register_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1496915357" xil_pn:in_ck="134155896310522947" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="7714995612264250780" xil_pn:start_ts="1496915357">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -233,66 +226,50 @@
     </transform>
     <transform xil_pn:end_ts="1496989176" xil_pn:in_ck="1357060013359415011" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7042253392860264223" xil_pn:start_ts="1496989171">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="Universal_Shift_Register.bld"/>
-      <outfile xil_pn:name="Universal_Shift_Register.ngd"/>
-      <outfile xil_pn:name="Universal_Shift_Register_ngdbuild.xrpt"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1496989182" xil_pn:in_ck="1357060013359415012" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1496989176">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Universal_Shift_Register.pcf"/>
-      <outfile xil_pn:name="Universal_Shift_Register_map.map"/>
-      <outfile xil_pn:name="Universal_Shift_Register_map.mrp"/>
-      <outfile xil_pn:name="Universal_Shift_Register_map.ncd"/>
-      <outfile xil_pn:name="Universal_Shift_Register_map.ngm"/>
-      <outfile xil_pn:name="Universal_Shift_Register_map.xrpt"/>
-      <outfile xil_pn:name="Universal_Shift_Register_summary.xml"/>
-      <outfile xil_pn:name="Universal_Shift_Register_usage.xml"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1496989193" xil_pn:in_ck="-1771861418517307395" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1496989182">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="Universal_Shift_Register.ncd"/>
-      <outfile xil_pn:name="Universal_Shift_Register.pad"/>
-      <outfile xil_pn:name="Universal_Shift_Register.par"/>
-      <outfile xil_pn:name="Universal_Shift_Register.ptwx"/>
-      <outfile xil_pn:name="Universal_Shift_Register.unroutes"/>
-      <outfile xil_pn:name="Universal_Shift_Register.xpi"/>
-      <outfile xil_pn:name="Universal_Shift_Register_pad.csv"/>
-      <outfile xil_pn:name="Universal_Shift_Register_pad.txt"/>
-      <outfile xil_pn:name="Universal_Shift_Register_par.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1496989203" xil_pn:in_ck="2669468731801024413" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1496989193">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="Universal_Shift_Register.ut"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="universal_shift_register.bgn"/>
-      <outfile xil_pn:name="universal_shift_register.bit"/>
-      <outfile xil_pn:name="universal_shift_register.drc"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1496989193" xil_pn:in_ck="1357060013359414880" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1496989189">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="Universal_Shift_Register.twr"/>
-      <outfile xil_pn:name="Universal_Shift_Register.twx"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Parameter xsthdpdir set to C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: Sequence_010110_detector.prj
 
@@ -43,8 +43,8 @@ Analyzing Verilog file "C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Sequenc
 Parsing module <Sequence_010110_detector>.
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.40 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.33 secs
  
 --> 
 
