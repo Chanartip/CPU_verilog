@@ -1,0 +1,651 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Sequence_detector_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Sequence_detector_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Sequence_detector_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Sequence_detector_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\debounce.v" into library work
+Parsing module <debounce>.
+Analyzing Verilog file "C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\clock_divider.v" into library work
+Parsing module <clk_div>.
+Analyzing Verilog file "C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\switch_filter.v" into library work
+Parsing module <switch_filter>.
+Analyzing Verilog file "C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\Sequence_010110_detector.v" into library work
+Parsing module <Sequence_010110_detector>.
+Analyzing Verilog file "C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\hex_to7segment.v" into library work
+Parsing module <hex_to7segment>.
+Analyzing Verilog file "C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\Sequence_detector_top.v" into library work
+Parsing module <Sequence_detector_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Sequence_detector_top>.
+
+Elaborating module <Sequence_010110_detector>.
+
+Elaborating module <hex_to7segment>.
+
+Elaborating module <switch_filter>.
+
+Elaborating module <clk_div>.
+
+Elaborating module <debounce>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Sequence_detector_top>.
+    Related source file is "C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\Sequence_detector_top.v".
+    Summary:
+	no macro.
+Unit <Sequence_detector_top> synthesized.
+
+Synthesizing Unit <Sequence_010110_detector>.
+    Related source file is "C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\Sequence_010110_detector.v".
+    Found 3-bit register for signal <PresentState>.
+    Found finite state machine <FSM_0> for signal <PresentState>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Sequence_010110_detector> synthesized.
+
+Synthesizing Unit <hex_to7segment>.
+    Related source file is "C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\hex_to7segment.v".
+    Found 16x7-bit Read Only RAM for signal <_n0024>
+    Summary:
+	inferred   1 RAM(s).
+Unit <hex_to7segment> synthesized.
+
+Synthesizing Unit <switch_filter>.
+    Related source file is "C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\switch_filter.v".
+    Summary:
+	no macro.
+Unit <switch_filter> synthesized.
+
+Synthesizing Unit <clk_div>.
+    Related source file is "C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\clock_divider.v".
+        Board_clk = 100000000
+    Found 32-bit register for signal <i>.
+    Found 1-bit register for signal <clk_out>.
+    Found 32-bit adder for signal <i[31]_GND_5_o_add_1_OUT> created at line 56.
+    Found 32-bit comparator greater for signal <n0002> created at line 62
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <clk_div> synthesized.
+
+Synthesizing Unit <debounce>.
+    Related source file is "C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\debounce.v".
+    Found 10-bit register for signal <q>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <debounce> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 10-bit register                                       : 1
+ 32-bit register                                       : 1
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <hex_to7segment>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0024> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hex>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <hex_to7segment> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <sd0/FSM_0> on signal <PresentState[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+ 101   | 101
+ 110   | 110
+-------------------
+
+Optimizing unit <Sequence_detector_top> ...
+
+Optimizing unit <clk_div> ...
+
+Optimizing unit <debounce> ...
+
+Optimizing unit <Sequence_010110_detector> ...
+WARNING:Xst:1710 - FF/Latch <sd2/sf0/i_31> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_30> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_29> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_28> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_27> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_26> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_25> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_24> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_23> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_22> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_21> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_20> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_19> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_18> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sd2/sf0/i_17> (without init value) has a constant value of 0 in block <Sequence_detector_top>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Sequence_detector_top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 31
+ Flip-Flops                                            : 31
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Sequence_detector_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 99
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 16
+#      LUT2                        : 18
+#      LUT3                        : 11
+#      LUT4                        : 2
+#      LUT5                        : 7
+#      LUT6                        : 1
+#      MUXCY                       : 23
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 31
+#      FDC                         : 31
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 4
+#      OBUF                        : 15
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              31  out of  18224     0%  
+ Number of Slice LUTs:                   56  out of   9112     0%  
+    Number used as Logic:                56  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     60
+   Number with an unused Flip Flop:      29  out of     60    48%  
+   Number with an unused LUT:             4  out of     60     6%  
+   Number of fully used LUT-FF pairs:    27  out of     60    45%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    232     8%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)             | Load  |
+-----------------------------------+-----------------------------------+-------+
+clk                                | BUFGP                             | 18    |
+sd2/sf0/clk_out                    | NONE(sd2/sf1/q_9)                 | 10    |
+step_out(sd2/sf1/Dout<0>:O)        | NONE(*)(sd0/PresentState_FSM_FFd2)| 3     |
+-----------------------------------+-----------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.771ns (Maximum Frequency: 209.600MHz)
+   Minimum input arrival time before clock: 2.929ns
+   Maximum output required time after clock: 5.102ns
+   Maximum combinational path delay: 5.362ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.771ns (frequency: 209.600MHz)
+  Total number of paths / destination ports: 4834 / 18
+-------------------------------------------------------------------------
+Delay:               4.771ns (Levels of Logic = 20)
+  Source:            sd2/sf0/i_0 (FF)
+  Destination:       sd2/sf0/i_16 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: sd2/sf0/i_0 to sd2/sf0/i_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.447   0.579  sd2/sf0/i_0 (sd2/sf0/i_0)
+     INV:I->O              1   0.206   0.000  sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_lut<0>_INV_0 (sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<0> (sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<1> (sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<2> (sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<3> (sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<4> (sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<5> (sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<6> (sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<7> (sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<8> (sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<9> (sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<10> (sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_cy<10>)
+     XORCY:CI->O           3   0.180   0.995  sd2/sf0/Madd_i[31]_GND_5_o_add_1_OUT_xor<11> (sd2/sf0/i[31]_GND_5_o_add_1_OUT<11>)
+     LUT5:I0->O            1   0.203   0.000  sd2/sf0/Mcompar_n0002_lut<1> (sd2/sf0/Mcompar_n0002_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  sd2/sf0/Mcompar_n0002_cy<1> (sd2/sf0/Mcompar_n0002_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  sd2/sf0/Mcompar_n0002_cy<2> (sd2/sf0/Mcompar_n0002_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  sd2/sf0/Mcompar_n0002_cy<3> (sd2/sf0/Mcompar_n0002_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  sd2/sf0/Mcompar_n0002_cy<4> (sd2/sf0/Mcompar_n0002_cy<4>)
+     MUXCY:CI->O          18   0.213   1.050  sd2/sf0/Mcompar_n0002_cy<5> (sd2/sf0/Mcompar_n0002_cy<5>)
+     LUT2:I1->O            1   0.205   0.000  sd2/sf0/Mmux_i[31]_GND_5_o_mux_3_OUT11 (sd2/sf0/i[31]_GND_5_o_mux_3_OUT<0>)
+     FDC:D                     0.102          sd2/sf0/i_0
+    ----------------------------------------
+    Total                      4.771ns (2.147ns logic, 2.624ns route)
+                                       (45.0% logic, 55.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sd2/sf0/clk_out'
+  Clock period: 1.165ns (frequency: 858.185MHz)
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Delay:               1.165ns (Levels of Logic = 0)
+  Source:            sd2/sf1/q_8 (FF)
+  Destination:       sd2/sf1/q_9 (FF)
+  Source Clock:      sd2/sf0/clk_out rising
+  Destination Clock: sd2/sf0/clk_out rising
+
+  Data Path: sd2/sf1/q_8 to sd2/sf1/q_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.616  sd2/sf1/q_8 (sd2/sf1/q_8)
+     FDC:D                     0.102          sd2/sf1/q_9
+    ----------------------------------------
+    Total                      1.165ns (0.549ns logic, 0.616ns route)
+                                       (47.1% logic, 52.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'step_out'
+  Clock period: 2.054ns (frequency: 486.831MHz)
+  Total number of paths / destination ports: 9 / 3
+-------------------------------------------------------------------------
+Delay:               2.054ns (Levels of Logic = 1)
+  Source:            sd0/PresentState_FSM_FFd1 (FF)
+  Destination:       sd0/PresentState_FSM_FFd2 (FF)
+  Source Clock:      step_out rising
+  Destination Clock: step_out rising
+
+  Data Path: sd0/PresentState_FSM_FFd1 to sd0/PresentState_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.447   1.302  sd0/PresentState_FSM_FFd1 (sd0/PresentState_FSM_FFd1)
+     LUT5:I0->O            1   0.203   0.000  sd0/PresentState_FSM_FFd2-In1 (sd0/PresentState_FSM_FFd2-In)
+     FDC:D                     0.102          sd0/PresentState_FSM_FFd2
+    ----------------------------------------
+    Total                      2.054ns (0.752ns logic, 1.302ns route)
+                                       (36.6% logic, 63.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              2.929ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       sd2/sf0/i_16 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to sd2/sf0/i_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            31   1.222   1.277  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.430          sd2/sf0/i_0
+    ----------------------------------------
+    Total                      2.929ns (1.652ns logic, 1.277ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sd2/sf0/clk_out'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              2.929ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       sd2/sf1/q_9 (FF)
+  Destination Clock: sd2/sf0/clk_out rising
+
+  Data Path: reset to sd2/sf1/q_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            31   1.222   1.277  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.430          sd2/sf1/q_0
+    ----------------------------------------
+    Total                      2.929ns (1.652ns logic, 1.277ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'step_out'
+  Total number of paths / destination ports: 9 / 6
+-------------------------------------------------------------------------
+Offset:              2.929ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       sd0/PresentState_FSM_FFd2 (FF)
+  Destination Clock: step_out rising
+
+  Data Path: reset to sd0/PresentState_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            31   1.222   1.277  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.430          sd0/PresentState_FSM_FFd1
+    ----------------------------------------
+    Total                      2.929ns (1.652ns logic, 1.277ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'step_out'
+  Total number of paths / destination ports: 33 / 11
+-------------------------------------------------------------------------
+Offset:              5.102ns (Levels of Logic = 2)
+  Source:            sd0/PresentState_FSM_FFd1 (FF)
+  Destination:       Z (PAD)
+  Source Clock:      step_out rising
+
+  Data Path: sd0/PresentState_FSM_FFd1 to Z
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.447   1.302  sd0/PresentState_FSM_FFd1 (sd0/PresentState_FSM_FFd1)
+     LUT5:I0->O            1   0.203   0.579  sd0/Mmux_z11 (Z_OBUF)
+     OBUF:I->O                 2.571          Z_OBUF (Z)
+    ----------------------------------------
+    Total                      5.102ns (3.221ns logic, 1.881ns route)
+                                       (63.1% logic, 36.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Delay:               5.362ns (Levels of Logic = 3)
+  Source:            M (PAD)
+  Destination:       Z (PAD)
+
+  Data Path: M to Z
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.788  M_IBUF (M_IBUF)
+     LUT5:I3->O            1   0.203   0.579  sd0/Mmux_z11 (Z_OBUF)
+     OBUF:I->O                 2.571          Z_OBUF (Z)
+    ----------------------------------------
+    Total                      5.362ns (3.996ns logic, 1.366ns route)
+                                       (74.5% logic, 25.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.771|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sd2/sf0/clk_out
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sd2/sf0/clk_out|    1.165|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock step_out
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+step_out       |    2.054|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.70 secs
+ 
+--> 
+
+Total memory usage is 282644 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

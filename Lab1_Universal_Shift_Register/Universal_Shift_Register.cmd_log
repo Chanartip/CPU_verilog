@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab1_Universal_Shift_Register/Universal_Shift_Register.xst" -ofn "C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab1_Universal_Shift_Register/Universal_Shift_Register.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc USR_ucf.ucf -p xc6slx16-csg324-3 Universal_Shift_Register.ngc Universal_Shift_Register.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Universal_Shift_Register_map.ncd Universal_Shift_Register.ngd Universal_Shift_Register.pcf 
+par -w -intstyle ise -ol high -mt off Universal_Shift_Register_map.ncd Universal_Shift_Register.ncd Universal_Shift_Register.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Universal_Shift_Register.twx Universal_Shift_Register.ncd -o Universal_Shift_Register.twr Universal_Shift_Register.pcf -ucf USR_ucf.ucf 
