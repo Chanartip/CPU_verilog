@@ -40,8 +40,10 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Sequence_detector_top.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Sequence_detector_top.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Sequence_detector_top.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Sequence_detector_top.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="Sequence_detector_top.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Sequence_detector_top.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Sequence_detector_top_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Sequence_detector_top_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Sequence_detector_top_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Sequence_detector_top_map.mrp" xil_pn:subbranch="Map"/>
@@ -60,6 +62,7 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Squence_010110_detector_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Squence_010110_detector_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -69,6 +72,11 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="sequence_detector_top.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="sequence_detector_top.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="sequence_detector_top.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -115,6 +123,7 @@
     <transform xil_pn:end_ts="1497394630" xil_pn:in_ck="-4506352428665413470" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7007838449598884235" xil_pn:start_ts="1497394628">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Squence_010110_detector_tb_beh.prj"/>
@@ -127,6 +136,8 @@
     <transform xil_pn:end_ts="1497394630" xil_pn:in_ck="-2969404625553639178" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2945818208008922952" xil_pn:start_ts="1497394630">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Squence_010110_detector_tb_isim_beh.wdb"/>
@@ -161,12 +172,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1497391286" xil_pn:in_ck="2789731509386006874" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4532230121151607479" xil_pn:start_ts="1497391279">
+    <transform xil_pn:end_ts="1497644252" xil_pn:in_ck="2789731509386006874" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4532230121151607479" xil_pn:start_ts="1497644245">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Sequence_detector_top.lso"/>
       <outfile xil_pn:name="Sequence_detector_top.ngc"/>
@@ -180,24 +189,24 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1497391071" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1632442411034209670" xil_pn:start_ts="1497391071">
+    <transform xil_pn:end_ts="1497644339" xil_pn:in_ck="2906177663013784379" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1632442411034209670" xil_pn:start_ts="1497644339">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1497391292" xil_pn:in_ck="2906177662203792842" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3435625084266786007" xil_pn:start_ts="1497391286">
+    <transform xil_pn:end_ts="1497644344" xil_pn:in_ck="-4189276488953262011" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3435625084266786007" xil_pn:start_ts="1497644339">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Sequence_detector_top.bld"/>
       <outfile xil_pn:name="Sequence_detector_top.ngd"/>
       <outfile xil_pn:name="Sequence_detector_top_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1497391299" xil_pn:in_ck="2906177662203792843" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1497391292">
+    <transform xil_pn:end_ts="1497644351" xil_pn:in_ck="-2700797825898364058" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1497644344">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Sequence_detector_top.pcf"/>
       <outfile xil_pn:name="Sequence_detector_top_map.map"/>
       <outfile xil_pn:name="Sequence_detector_top_map.mrp"/>
@@ -208,10 +217,9 @@
       <outfile xil_pn:name="Sequence_detector_top_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1497391310" xil_pn:in_ck="-309671053070579100" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1497391299">
+    <transform xil_pn:end_ts="1497644361" xil_pn:in_ck="4215054300405272095" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1497644351">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Sequence_detector_top.ncd"/>
       <outfile xil_pn:name="Sequence_detector_top.pad"/>
       <outfile xil_pn:name="Sequence_detector_top.par"/>
@@ -223,10 +231,22 @@
       <outfile xil_pn:name="Sequence_detector_top_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1497391310" xil_pn:in_ck="2906177662203792711" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1497391306">
+    <transform xil_pn:end_ts="1497644370" xil_pn:in_ck="2906177662203792711" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1497644361">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Sequence_detector_top.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="sequence_detector_top.bgn"/>
+      <outfile xil_pn:name="sequence_detector_top.bit"/>
+      <outfile xil_pn:name="sequence_detector_top.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1497644361" xil_pn:in_ck="3734203461660173922" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1497644357">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Sequence_detector_top.twr"/>
       <outfile xil_pn:name="Sequence_detector_top.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

@@ -14,9 +14,6 @@
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab2_Sequence_detector/Sequence_detector_top.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab2_Sequence_detector/Squence_010110_detector_tb.v&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab2_Sequence_detector/clock_divider.v&quot; into library work</arg>
 </msg>
 

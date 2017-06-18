@@ -18,3 +18,14 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Sequence_d
 map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Sequence_detector_top_map.ncd Sequence_detector_top.ngd Sequence_detector_top.pcf 
 par -w -intstyle ise -ol high -mt off Sequence_detector_top_map.ncd Sequence_detector_top.ncd Sequence_detector_top.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Sequence_detector_top.twx Sequence_detector_top.ncd -o Sequence_detector_top.twr Sequence_detector_top.pcf 
+xst -intstyle ise -ifn "C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab2_Sequence_detector/Sequence_detector_top.xst" -ofn "C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab2_Sequence_detector/Sequence_detector_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Sequence_detector_top.ngc Sequence_detector_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Sequence_detector_top_map.ncd Sequence_detector_top.ngd Sequence_detector_top.pcf 
+par -w -intstyle ise -ol high -mt off Sequence_detector_top_map.ncd Sequence_detector_top.ncd Sequence_detector_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Sequence_detector_top.twx Sequence_detector_top.ncd -o Sequence_detector_top.twr Sequence_detector_top.pcf 
+bitgen -intstyle ise -f Sequence_detector_top.ut Sequence_detector_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sequence_detector_ucf.ucf -p xc6slx16-csg324-3 Sequence_detector_top.ngc Sequence_detector_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Sequence_detector_top_map.ncd Sequence_detector_top.ngd Sequence_detector_top.pcf 
+par -w -intstyle ise -ol high -mt off Sequence_detector_top_map.ncd Sequence_detector_top.ncd Sequence_detector_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Sequence_detector_top.twx Sequence_detector_top.ncd -o Sequence_detector_top.twr Sequence_detector_top.pcf -ucf Sequence_detector_ucf.ucf 
+bitgen -intstyle ise -f Sequence_detector_top.ut Sequence_detector_top.ncd 

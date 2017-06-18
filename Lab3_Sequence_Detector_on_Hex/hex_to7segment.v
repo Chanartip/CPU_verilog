@@ -35,7 +35,7 @@ module hex_to7segment(hex, a,b,c,d,e,f,g);
          4'h6:    {a,b,c,d,e,f,g} = 7'b0100000; // 6
          4'h7:    {a,b,c,d,e,f,g} = 7'b0001111; // 7
          4'h8:    {a,b,c,d,e,f,g} = 7'b0000000; // 8
-         4'h9:    {a,b,c,d,e,f,g} = 7'b0000010; // 9
+         4'h9:    {a,b,c,d,e,f,g} = 7'b0000100; // 9
          4'hA:    {a,b,c,d,e,f,g} = 7'b0001000; // A
          4'hB:    {a,b,c,d,e,f,g} = 7'b1100000; // b
          4'hC:    {a,b,c,d,e,f,g} = 7'b0110001; // C

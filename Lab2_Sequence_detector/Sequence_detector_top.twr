@@ -4,7 +4,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
 -n 3 -fastpaths -xml Sequence_detector_top.twx Sequence_detector_top.ncd -o
-Sequence_detector_top.twr Sequence_detector_top.pcf
+Sequence_detector_top.twr Sequence_detector_top.pcf -ucf
+Sequence_detector_ucf.ucf
 
 Design file:              Sequence_detector_top.ncd
 Physical constraint file: Sequence_detector_top.pcf
@@ -37,7 +38,7 @@ Setup/Hold to clock clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-reset       |    2.184(R)|      SLOW  |    0.113(R)|      SLOW  |clk_BUFGP         |   0.000|
+reset       |    4.993(R)|      SLOW  |   -0.384(R)|      SLOW  |clk_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -45,26 +46,26 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.483|         |         |         |
+clk            |    7.463|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-M              |Z              |    6.380|
-X              |Z              |    6.275|
+M              |Z              |    9.294|
+X              |Z              |    8.985|
 ---------------+---------------+---------+
 
 
-Analysis completed Tue Jun 13 15:01:49 2017 
+Analysis completed Fri Jun 16 13:19:20 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 249 MB
+Peak Memory Usage: 245 MB
 
 
 

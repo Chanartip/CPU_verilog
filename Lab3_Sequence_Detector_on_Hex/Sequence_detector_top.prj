@@ -1,6 +1,0 @@
-verilog work "debounce.v"
-verilog work "clock_divider.v"
-verilog work "switch_filter.v"
-verilog work "Sequence_010110_detector.v"
-verilog work "hex_to7segment.v"
-verilog work "Sequence_detector_top.v"

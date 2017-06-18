@@ -25,30 +25,29 @@
 // Update       : re-arrange the code and comment, and change variables' names.
 //
 ////////////////////////////////////////////////////////////////////////////////////
-module Sequence_detector_top(clk, reset, step, X, M, Z, Q, A,B,C,D,E,F,G, anode);
+module Sequence_detector_top(clk, reset, step, X, M, Z, A,B,C,D,E,F,G, anode);
    
-   input clk,reset;
-   input      step;
-   input         X;
-   input         M;
-   output        Z;
-   output [2:0]  Q;
+   input clk,reset;           // on-board clock, and botton up for reset
+   input      step;           // step clock on button down
+   input         X;           // 1-bit for serial input at switch[0]
+   input         M;           // Moore or Mealy mode at switch[7]
+   output        Z;           // flag output for the sequence detector at led[0]
    
    // 7segment-display outputs
    output A,B,C,D,E,F,G;
    output [3:0]   anode;
    
-   wire step_out;
-   
+   wire    step_out;
+   wire [2:0] STATE;
    // The module to check the serial input if it has '010110' pattern
    // in it. Once the module found the pattern, it will return '1'
    // and also display the current state on LEDs
    //                           (     clk, reset, x, m, z, state)
-   Sequence_010110_detector sd0 (step_out, reset, X, M, Z, Q);
+   Sequence_010110_detector sd0 (step_out, reset, X, M, Z, STATE);
    
    //
-   //              [3:0]hex, a,b,c,d,e,f,g
-   hex_to7segment sd1( {1'b0,Q}, A,B,C,D,E,F,G);
+   //                      [3:0]hex, a,b,c,d,e,f,g
+   hex_to7segment sd1( {1'b0,STATE}, A,B,C,D,E,F,G);
    
    // A structural module or top level of clock divider and debounce modules.
    // Make other structural modules easier to access these two modules.

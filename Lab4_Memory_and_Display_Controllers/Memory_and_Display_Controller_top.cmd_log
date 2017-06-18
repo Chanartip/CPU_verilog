@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab4_Memory_and_Display_Controllers/Memory_and_Display_Controller_top.xst" -ofn "C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab4_Memory_and_Display_Controllers/Memory_and_Display_Controller_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Mem_and_Dis_controller_ucf.ucf -p xc6slx16-csg324-3 Memory_and_Display_Controller_top.ngc Memory_and_Display_Controller_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Memory_and_Display_Controller_top_map.ncd Memory_and_Display_Controller_top.ngd Memory_and_Display_Controller_top.pcf 
+par -w -intstyle ise -ol high -mt off Memory_and_Display_Controller_top_map.ncd Memory_and_Display_Controller_top.ncd Memory_and_Display_Controller_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Memory_and_Display_Controller_top.twx Memory_and_Display_Controller_top.ncd -o Memory_and_Display_Controller_top.twr Memory_and_Display_Controller_top.pcf -ucf Mem_and_Dis_controller_ucf.ucf 
+bitgen -intstyle ise -f Memory_and_Display_Controller_top.ut Memory_and_Display_Controller_top.ncd 

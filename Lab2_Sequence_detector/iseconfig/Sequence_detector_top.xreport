@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-06-13T15:56:22</DateModified>
+  <DateModified>2017-06-16T15:27:51</DateModified>
   <ModuleName>Sequence_detector_top</ModuleName>
   <SummaryTimeStamp>2017-06-13T14:57:44</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab2_Sequence_detector/iseconfig/Sequence_detector_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab2_Sequence_detector</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab2_Sequence_detector\</ImplementationReportsDirectory>
   <DateInitialized>2017-06-13T14:57:38</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

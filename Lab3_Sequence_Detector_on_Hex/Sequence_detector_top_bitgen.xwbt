@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\Sequence_detector_top.ncd
+OUTFILE=C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex\Sequence_detector_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab3_Sequence_Detector_on_Hex
+LICENSE=WebPack
+USER_INFO=211085786_0_0_935
