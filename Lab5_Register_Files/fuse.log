@@ -1,0 +1,23 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/Register_Files_tb_isim_beh.exe -prj C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/Register_Files_tb_beh.prj work.Register_Files_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/reg16.v" into library work
+Analyzing Verilog file "C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/decoder3to8.v" into library work
+Analyzing Verilog file "C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/Register_File.v" into library work
+Analyzing Verilog file "C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/Register_Files_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module decoder3to8
+Compiling module reg16
+Compiling module Register_File
+Compiling module Register_Files_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 Verilog Units
+Built simulation executable C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/Register_Files_tb_isim_beh.exe
+Fuse Memory Usage: 28216 KB
+Fuse CPU Usage: 280 ms

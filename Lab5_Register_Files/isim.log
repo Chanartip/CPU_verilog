@@ -1,0 +1,29 @@
+ISim log file
+Running: C:\Users\Charles\OneDrive\2017Fall_CSULB\CPU_301\Lab5_Register_Files\Register_Files_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/Register_Files_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Time 36000.0 ps || R 0000 || S 0000
+Time 46000.0 ps || R 0000 || S 0000
+Time 56000.0 ps || R 0000 || S 0000
+Time 66000.0 ps || R 0000 || S 0000
+Time 76000.0 ps || R 0000 || S 0000
+Time 86000.0 ps || R 0000 || S 0000
+Time 96000.0 ps || R 0000 || S 0000
+Time 106000.0 ps || R 0000 || S 0000
+Time 196000.0 ps || R ffff || S fff8
+Time 206000.0 ps || R fffe || S fff9
+Time 216000.0 ps || R fffd || S fffa
+Time 226000.0 ps || R fffc || S fffb
+Time 236000.0 ps || R fffb || S fffc
+Time 246000.0 ps || R fffa || S fffd
+Time 256000.0 ps || R fff9 || S fffe
+Time 266000.0 ps || R fff8 || S ffff

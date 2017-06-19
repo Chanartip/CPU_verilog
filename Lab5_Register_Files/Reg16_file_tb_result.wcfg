@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/Register_Files_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Register_Files_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/Register_Files_tb/R" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">R[15:0]</obj_property>
+      <obj_property name="ObjectShortName">R[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Register_Files_tb/S" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">S[15:0]</obj_property>
+      <obj_property name="ObjectShortName">S[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Register_Files_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Register_Files_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Register_Files_tb/we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Register_Files_tb/W_Adr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">W_Adr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">W_Adr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Register_Files_tb/R_Adr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">R_Adr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">R_Adr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Register_Files_tb/S_Adr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">S_Adr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S_Adr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Register_Files_tb/W" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">W[15:0]</obj_property>
+      <obj_property name="ObjectShortName">W[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>
