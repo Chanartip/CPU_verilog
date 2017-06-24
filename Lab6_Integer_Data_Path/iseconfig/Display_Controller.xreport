@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-06-21T18:44:36</DateModified>
+  <DateModified>2017-06-22T00:49:20</DateModified>
   <ModuleName>Display_Controller</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/iseconfig/Display_Controller.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files\</ImplementationReportsDirectory>
-  <DateInitialized>2017-06-19T12:57:30</DateInitialized>
+  <SavedFilePath>C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab6_Integer_Data_Path/iseconfig/Display_Controller.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab6_Integer_Data_Path</ImplementationReportsDirectory>
+  <DateInitialized>2017-06-22T00:49:20</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

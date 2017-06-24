@@ -8,7 +8,28 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/Register_Files_tb.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/Display_Controller.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/Mux4to1.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/Register_File.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/decoder3to8.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/hex_to7segment.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/led_clock.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/led_controller.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Charles/OneDrive/2017Fall_CSULB/CPU_301/Lab5_Register_Files/reg16.v&quot; into library work</arg>
 </msg>
 
 </messages>
