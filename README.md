@@ -9,6 +9,6 @@ The content will be <br />
 (3) Sequence_detector_on_Hex (on 7-segment display) <br />
 (4) Memory_and_Display_Controller <br />
 (5) Register_Files <br />
-(6) .<br />
-(7) .<br />
-(8) .<br />
+(6) Integer_Data_Path<br />
+(7) CPU_Execution_Unit<br />
+(8) 16bit_RISC_Processor<br />
